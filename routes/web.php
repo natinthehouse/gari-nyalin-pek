@@ -23,6 +23,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/createposts', [App\Http\Controllers\PostController::class, 'createposts'])->name('createposts');
 Route::post('/store', [App\Http\Controllers\PostController::class, 'store'])->name('store');
 Route::get('/index', [App\Http\Controllers\PostController::class, 'index'])->name('index');
-Route::get('/viewupdate/{id}', [App\Http\Controllers\PostController::class, 'viewupdate'])->name('viewupdate');
-Route::post('/update/{id}', [App\Http\Controllers\PostController::class, 'update'])->name('update');
-Route::get('/delete/{id}', [App\Http\Controllers\PostController::class, 'delete'])->name('delete');
+Route::get('/viewupdate{id}', [App\Http\Controllers\PostController::class, 'viewupdate'])->name('viewupdate');
+Route::post('/update{id}', [App\Http\Controllers\PostController::class, 'update'])->name('update');
+Route::get('/delete{id}', [App\Http\Controllers\PostController::class, 'delete'])->name('delete');
